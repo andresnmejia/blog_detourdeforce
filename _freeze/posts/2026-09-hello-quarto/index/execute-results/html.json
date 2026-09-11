@@ -1,0 +1,12 @@
+{
+  "hash": "db45015f8bb68f5b687f5fc82a7cf9c1",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Hello, Quarto\"\ndescription: \"Testing Python, math, and interactive plots.\"\ndate: 2026-09-11\ncategories: [python, notes]\n---\n\nHere's some inline math:\n\n$e^{i\\pi} + 1 = 0$\n\nAnd display math:\n\n$$\np(y \\mid x)\n=\n\\frac{p(x \\mid y)p(y)}{p(x)}\n$$\n\n## Python\n\n::: {#9d6d428d .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\n\nrng = np.random.default_rng(42)\nx = rng.normal(size=1000)\n\nx.mean(), x.std()\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n```\n(np.float64(-0.028891550995946837), np.float64(0.988722355396508))\n```\n:::\n:::\n\n\n## Plot\n\n::: {#a8ae3e11 .cell execution_count=2}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots()\nax.hist(x, bins=30)\nax.set_title(\"Normally distributed things\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-3-output-1.png){width=575 height=432}\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

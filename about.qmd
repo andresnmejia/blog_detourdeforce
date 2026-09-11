@@ -1,0 +1,16 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn Andres
+      href: https://www.linkedin.com/in/andres-mejia-629142379
+    - icon: github
+      text: GitHub Andres
+      href: https://github.com/andresnmejia
+
+---
+
+About this blog
