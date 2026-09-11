@@ -26,67 +26,19 @@
 <p><img src="https://latex.codecogs.com/png.latex?%0Ap(y%20%5Cmid%20x)%0A=%0A%5Cfrac%7Bp(x%20%5Cmid%20y)p(y)%7D%7Bp(x)%7D%0A"></p>
 <section id="python" class="level2">
 <h2 class="anchored" data-anchor-id="python">Python</h2>
-<div id="9d6d428d" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb1-2"></span>
-<span id="cb1-3">rng <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.random.default_rng(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">42</span>)</span>
-<span id="cb1-4">x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> rng.normal(size<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1000</span>)</span>
-<span id="cb1-5"></span>
-<span id="cb1-6">x.mean(), x.std()</span></code></pre></div></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>(np.float64(-0.028891550995946837), np.float64(0.988722355396508))</code></pre>
-</div>
-</div>
-</section>
-<section id="plot" class="level2">
-<h2 class="anchored" data-anchor-id="plot">Plot</h2>
-<div id="a8ae3e11" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb3-2"></span>
-<span id="cb3-3">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb3-4">ax.hist(x, bins<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">30</span>)</span>
-<span id="cb3-5">ax.set_title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Normally distributed things"</span>)</span>
-<span id="cb3-6">plt.show()</span></code></pre></div></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://detourdeforce.net/posts/2026-09-hello-quarto/index_files/figure-html/cell-3-output-1.png" width="575" height="432" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>import numpy as np</p>
+<p>rng = np.random.default_rng(42) x = rng.normal(size=1000)</p>
+<p>x.mean(), x.std()</p>
+<pre><code>
+## Plot
+
+```{python}
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+ax.hist(x, bins=30)
+ax.set_title("Normally distributed things")
+plt.show()</code></pre>
 
 
 <!-- -->
