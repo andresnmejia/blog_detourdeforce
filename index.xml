@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Detour De Force</title>
+<link>https://detourdeforce.net/</link>
+<atom:link href="https://detourdeforce.net/index.xml" rel="self" type="application/rss+xml"/>
+<description>Julian and Andres Noodling</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Fri, 11 Sep 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Hello, Quarto</title>
+  <link>https://detourdeforce.net/posts/2026-09-hello-quarto/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Here’s some inline math:</p>
+<p><img src="https://latex.codecogs.com/png.latex?e%5E%7Bi%5Cpi%7D%20+%201%20=%200"></p>
+<p>And display math:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ap(y%20%5Cmid%20x)%0A=%0A%5Cfrac%7Bp(x%20%5Cmid%20y)p(y)%7D%7Bp(x)%7D%0A"></p>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<p>import numpy as np</p>
+<p>rng = np.random.default_rng(42) x = rng.normal(size=1000)</p>
+<p>x.mean(), x.std()</p>
+<pre><code>
+## Plot
+
+```{python}
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+ax.hist(x, bins=30)
+ax.set_title("Normally distributed things")
+plt.show()</code></pre>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>notes</category>
+  <guid>https://detourdeforce.net/posts/2026-09-hello-quarto/</guid>
+  <pubDate>Fri, 11 Sep 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <link>https://detourdeforce.net/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This is the first post in a Quarto blog. Welcome!</p>
+<p><img src="https://detourdeforce.net/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+
+
+<!-- -->
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://detourdeforce.net/posts/welcome/</guid>
+  <pubDate>Tue, 08 Sep 2026 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

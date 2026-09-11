@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/2026-09-hello-quarto/index.html",
+    "href": "posts/2026-09-hello-quarto/index.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Here’s some inline math:\n\\(e^{i\\pi} + 1 = 0\\)\nAnd display math:\n\\[\np(y \\mid x)\n=\n\\frac{p(x \\mid y)p(y)}{p(x)}\n\\]"
+  },
+  {
+    "objectID": "posts/2026-09-hello-quarto/index.html#python",
+    "href": "posts/2026-09-hello-quarto/index.html#python",
+    "title": "Hello, Quarto",
+    "section": "Python",
+    "text": "Python\nimport numpy as np\nrng = np.random.default_rng(42) x = rng.normal(size=1000)\nx.mean(), x.std()\n\n## Plot\n\n```{python}\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots()\nax.hist(x, bins=30)\nax.set_title(\"Normally distributed things\")\nplt.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Detour De Force",
+    "section": "",
+    "text": "Math, 🥚, Statistics, 🐣, ML, 🥚, AI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHello, Quarto\n\n\n\npython\n\nnotes\n\n\n\nTesting Python, math, and interactive plots.\n\n\n\n\n\nSep 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 8, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+  }
+]
