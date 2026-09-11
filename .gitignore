@@ -1,6 +1,51 @@
+# Python / uv
 .venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Quarto
 .quarto/
 _site/
-__pycache__/
-*.pyc
+
+# macOS
 .DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Keys and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Local scratch / temp files
+tmp/
+temp/
+*.tmp
+
+# Optional: private drafts
+_private/
+drafts-private/
+/.quarto/
+**/*.quarto_ipynb
+
+
+#instructions
+quickstart.md

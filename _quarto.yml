@@ -1,5 +1,10 @@
 project:
   type: website
+  # Root-level .qmd pages plus everything under posts/. Root .md files such as
+  # quickstart.md are docs for contributors, not site pages, so they are not rendered.
+  render:
+    - "*.qmd"
+    - "posts/**"
 
 website:
   title: "Detour De Force"
